@@ -20,6 +20,7 @@ public:
   void setText(const std::string &txt);
 
 private:
+  friend class ReviewBot;
   static const unsigned int MIN_RATING = 1;
   static const unsigned int MAX_RATING = 5;
   static const unsigned int MAX_TITLE_LENGTH = 128;

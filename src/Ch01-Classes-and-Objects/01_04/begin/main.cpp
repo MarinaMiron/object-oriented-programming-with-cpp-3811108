@@ -2,7 +2,7 @@
 
 int main()
 {
-  Review review = Review(5, "Execellent", "Exceeded my expectations");
+  Review review;
   review.displayDetails();
 
   return 0;

@@ -6,6 +6,8 @@
 class Review
 {
 public:
+  Review(unsigned int r, const std::string &t, const std::string &txt);
+  ~Review();
   void displayDetails() const;
 
 private:

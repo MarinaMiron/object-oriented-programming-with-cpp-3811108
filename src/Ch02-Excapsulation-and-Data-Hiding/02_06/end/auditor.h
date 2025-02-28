@@ -5,6 +5,8 @@
 
 class Auditor
 {
+private:
+  
 public:
   bool verifyAccount(const BankAccount &account);
 };

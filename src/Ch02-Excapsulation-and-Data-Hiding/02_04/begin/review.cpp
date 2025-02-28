@@ -14,7 +14,11 @@ Review::~Review()
 
 void Review::displayDetails() const
 {
-  std::cout << "Rating: " << rating << "/5\nTitle: " << title << "\nText: " << text << std::endl;
+  ++accessCount;
+  std::cout << "Rating: " << rating << "/5\n"
+  << "Title: " << title << "\n"
+  << "Text: " << text << "\n"
+  << "Read: "<< accessCount << " times" << std::endl;
 }
 
 void Review::setRating(unsigned int r)

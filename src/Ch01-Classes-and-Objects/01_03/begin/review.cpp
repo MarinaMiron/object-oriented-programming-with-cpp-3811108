@@ -1,3 +1,5 @@
+#ifndef REVIEW_H
+#define REVIEW_H
 #include <iostream>
 
 class Review
@@ -13,3 +15,4 @@ private:
   std::string title;
   std::string text;
 };
+#endif

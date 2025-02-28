@@ -11,6 +11,15 @@ public:
 
   void displayDetails() const;
 
+  unsigned int getRating() const;
+  std::string getTitle() const;
+  std::string getText() const;
+
+  void setRating(unsigned int r);
+  void setTitle(const std::string& t);
+  void setText(const std::string& txt);
+
+
 private:
   unsigned int rating;
   std::string title;

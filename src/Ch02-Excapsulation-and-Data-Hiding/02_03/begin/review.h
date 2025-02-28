@@ -20,6 +20,13 @@ public:
   void setText(const std::string &txt);
 
 private:
+  static const unsigned int MIN_RATING = 1;
+  static const unsigned int MAX_RATING = 5;
+  static const unsigned int MAX_TITLE_LENGHT = 128;
+  static const unsigned int MAX_TEXT_LENGHT = 1024;
+  std::string validateAndTrim(const std::string &str,
+                              unsigned int maxLength,
+                              const std::string &fieldName) const;
   unsigned int rating;
   std::string title;
   std::string text;
