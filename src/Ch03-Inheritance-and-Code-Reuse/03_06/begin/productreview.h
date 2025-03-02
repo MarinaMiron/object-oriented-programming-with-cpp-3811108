@@ -5,7 +5,7 @@
 #include "review.h"
 #include "sociable.h"
 
-class ProductReview : public Review, public Sociable
+class ProductReview : public Review
 {
 public:
   ProductReview(unsigned int r,
@@ -16,6 +16,10 @@ public:
 
   ~ProductReview();
   void displayDetails() const;
+
+  void like() {social.like();}
+  void share() {social.share();}
+  void addComment(const std::string &comment) {social.addComment(comment);}
 
   std::string getProductId() const { return productId; }
   std::string getCategory() const { return category; }
@@ -28,6 +32,7 @@ private:
   static const unsigned int MAX_CATEGORY_LENGTH = 512;
   std::string productId;
   std::string category;
+  Sociable social;
 };
 
 #endif

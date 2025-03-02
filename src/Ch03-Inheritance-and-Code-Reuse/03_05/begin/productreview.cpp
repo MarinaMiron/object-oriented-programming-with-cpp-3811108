@@ -20,6 +20,7 @@ void ProductReview::displayDetails() const
   Review::displayDetails();
   std::cout << "Product ID: " << productId << "\n"
             << "Category: " << category << std::endl;
+  Sociable::displaySocialStats();
 }
 
 void ProductReview::setProductId(const std::string &id)

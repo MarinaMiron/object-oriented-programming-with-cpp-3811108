@@ -61,14 +61,3 @@ void ProductReview::setCategory(const std::string &cat)
   // Note: validateAndTrim() function is not available because we removed it from this class’s declaration
   category = Review::validateAndTrim(cat, MAX_CATEGORY_LENGTH, "Product category");
 }
-// !!!: validateAndTrim() function removed from the class declaration
-std::string ProductReview::validateAndTrim(const std::string &str,
-                                           unsigned int maxLength,
-                                           const std::string &fieldName) const
-{
-  if (str.empty())
-  {
-    throw std::invalid_argument(fieldName + " cannot be empty");
-  }
-  return str.length() > maxLength ? str.substr(0, maxLength) : str;
-}

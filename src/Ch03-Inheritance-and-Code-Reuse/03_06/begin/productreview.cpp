@@ -17,10 +17,13 @@ ProductReview::~ProductReview()
 
 void ProductReview::displayDetails() const
 {
+  // std::cout << "Posted on: " << timestamp << std::endl;
+  std::cout << "Review posted: " << Review::timestamp << "\n"
+            << "Last social activity: " << social.getTimeStamp() << std::endl;
   Review::displayDetails();
   std::cout << "Product ID: " << productId << "\n"
             << "Category: " << category << std::endl;
-  displaySocialStats();
+  social.displaySocialStats();
 }
 
 void ProductReview::setProductId(const std::string &id)

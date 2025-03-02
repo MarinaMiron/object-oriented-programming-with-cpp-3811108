@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include "review.h"
+#include "sociable.h"
 
-class ProductReview : public Review
+class ProductReview : public Review, public Sociable
 {
 public:
   ProductReview(unsigned int r,
