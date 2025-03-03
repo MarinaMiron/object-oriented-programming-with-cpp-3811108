@@ -10,7 +10,9 @@ public:
   ~DefensiveAbility();
 
   // TODO: Override use()
+  void use() const override;
   // TODO: Override describe()
+  void describe() const override;
 
 private:
   int protectionAmount; // Amount of protection provided

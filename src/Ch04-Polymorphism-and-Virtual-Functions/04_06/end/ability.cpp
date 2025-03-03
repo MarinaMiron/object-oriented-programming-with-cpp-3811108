@@ -1,7 +1,9 @@
 // ability.cpp
 #include "ability.h"
 
-Ability::Ability(const std::string &name) : abilityName(name) {}
+Ability::Ability(const std::string &name) : abilityName(name)
+{
+}
 
 Ability::~Ability()
 {

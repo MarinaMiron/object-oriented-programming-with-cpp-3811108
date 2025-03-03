@@ -9,7 +9,10 @@ public:
   MeleeAttack(const std::string &name, int force);
 
   // TODO: Override use()
+  void use() const override;
   // TODO: Override describe()
+  void describe() const override;
+
 private:
   int impactForce;
 };
